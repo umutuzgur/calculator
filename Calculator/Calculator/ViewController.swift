@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     var displayValue: Double {
         get {
             //notice use of ! twice in below line. If you get that, then you have truely understood optionals :-)
-            return NSNumberFormatter().numberFromString(displayLabel.text!)!.doubleValue
+            return NumberFormatter().number(from: displayLabel.text!)!.doubleValue
         }
         set {
             // Notice how we are using a Property Setter to perform additional tasks while 
@@ -38,7 +38,11 @@ class ViewController: UIViewController {
         displayLabel.text = isFirstDigit ? digit : displayLabel.text! + digit
         isFirstDigit = false
     }
-
+    @IBAction func appendDigit(_ sender: Any) {
+    }
+    @IBAction func touch(_ sender: Any) {
+    }
+    
     @IBAction func clearDisplay(sender: AnyObject) {
         displayValue = 0
            }

@@ -36,6 +36,7 @@
 		0A6DF3F01A8CB013003C4F86 /* CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A6DF3F51A8CB013003C4F86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A6DF3F61A8CB013003C4F86 /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
+		0F22CB02207257AF00BFF8C4 /* Calculator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Calculator.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 				0A6DF3DD1A8CB013003C4F86 /* Calculator */,
 				0A6DF3F31A8CB013003C4F86 /* CalculatorTests */,
 				0A6DF3DC1A8CB013003C4F86 /* Products */,
+				0F22CB03207257AF00BFF8C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +79,7 @@
 		0A6DF3DD1A8CB013003C4F86 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				0F22CB02207257AF00BFF8C4 /* Calculator.entitlements */,
 				0A6DF3E01A8CB013003C4F86 /* AppDelegate.swift */,
 				0A6DF3E21A8CB013003C4F86 /* ViewController.swift */,
 				0A6DF3E41A8CB013003C4F86 /* Main.storyboard */,
@@ -110,6 +113,13 @@
 				0A6DF3F51A8CB013003C4F86 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0F22CB03207257AF00BFF8C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +171,19 @@
 				TargetAttributes = {
 					0A6DF3DA1A8CB012003C4F86 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 793PYL8WMU;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+							com.apple.Wallet = {
+								enabled = 0;
+							};
+						};
 					};
 					0A6DF3EF1A8CB013003C4F86 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -338,9 +361,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 793PYL8WMU;
 				INFOPLIST_FILE = Calculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.123123123r;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -348,9 +379,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 793PYL8WMU;
 				INFOPLIST_FILE = Calculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.123123123r;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -407,6 +446,7 @@
 				0A6DF3FC1A8CB013003C4F86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A6DF3FD1A8CB013003C4F86 /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +455,7 @@
 				0A6DF3FF1A8CB013003C4F86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
